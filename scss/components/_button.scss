@@ -1,0 +1,11 @@
+    
+    .btn {
+       // @extend %btn; //
+       @include btn;
+
+    &:hover,
+    &:focus {
+      color: var(--accent);
+      background-color: #FFFFFF;
+    }
+}

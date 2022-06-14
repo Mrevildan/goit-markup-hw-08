@@ -1,0 +1,201 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color:  #2f303a;
+  }
+  
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  
+  .ftr-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo-ftr {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+  }
+
+.footer-list {
+  padding: 0;
+}
+  .ftr-box-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+    padding: 30px 0px;
+    padding-bottom: 30px;
+    padding-top: 0%;
+}
+  
+
+  .ftr-box-link .link {
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0%;
+    
+}
+  
+
+  .join {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin-top: 0;
+color: #FFFFFF;
+  }
+
+  .address {
+    display: inline-block;
+  }
+
+  .nav-ftr {
+    display: inline-block;
+    margin-top: 9px;
+  }
+  
+  
+  .adrs-ftr {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+
+    transition: var(--fast-anim);
+
+    
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
+  }
+  .nav-ftr {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(225, 255, 255, 0.6);
+
+    transition: var(--fast-anim);
+  
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
+}
+
+.ftr-box-link {
+  display: flex;
+    flex-direction: column;
+    padding-top: 0%;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+.ftr-box-link .social {
+  padding: 0;
+  margin: 0;
+}
+
+.ftr-box-link .item:not(:last-child) {
+  margin-right: 10px;
+}
+.ftr-box-link .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+
+  transition: var(--fast-anim);
+
+&:hover,
+&:focus {
+  background-color: var(--accent);
+  fill: #FFFFFF;
+}
+}
+
+
+/* Форма реєстрації в футері */
+
+
+.subscride {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0%;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+
+.ftr-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.join-title {
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin-top: 0%;
+margin-bottom: 20;
+color: #FFFFFF;
+}
+
+.join-email {
+  width: 358px;
+  height: 50px;
+  background-color: inherit;
+  color: #FFFFFF;
+  margin-right: 12px;
+  padding-left: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  outline: transparent;
+
+  transition: border 400ms ease;
+
+&:focus {
+  border: 2px solid var(--accent);
+}
+}
+
+  .join-icon {
+
+    fill: currentColor;
+
+  }
+    .join-button >.join-icon:hover {
+      fill: var(--accent);
+    }
+    
+    .join-button >.join-icon:focus {
+      fill: var(--accent);
+    }
+
+
+  
