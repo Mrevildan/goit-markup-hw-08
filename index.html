@@ -16,87 +16,118 @@
   </head>
   <body>
 
-    <!--Шапка
-     <header class="header">
-      <div class="container header__container">
-        <a class="logo" href="./index.html" lang="en" ><span class="logo__accent">Web</span>Studio</a>
-      <nav class="navigation">
-        <ul class="navigation__site-nav">
-          <li class="navigation__item"><a href="./index.html" class="navigation__link--current">Студія</a></li>
-          <li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфоліо</a></li>
-          <li class="navigation__item"><a href="#address" class="navigation__link">Контакти</a></li>
-        </ul>
-        <button type="button" class="menu-button is-open" 
-        data-menu-button
-        aria-expanded="false">
-          <svg  width="40" height="40" aria-label="Кнопка мобільного меню">
-            <use class="icon-close" href="./images/sprite.svg#icon-close"> </use>
-              <use class="icon-menu" href="./images/sprite.svg#icon-menu"> </use>
+    
+    <header class="header">
+      <div class="container">
+        <a class="logo header__logo link" href="./index.html">
+          <span class="logo__part1">Web</span
+          ><span class="logo__part2">Studio</span>
+        </a>
+        <button class="menu-open-btn" type="button"    data-menu-button>
+          <svg class="mobile-menu__icon" width="40" height="40">
+            <use
+              class="mobile-menu__icon--open"
+              href="./images/sprite.svg#icon-menu"
+            ></use>
           </svg>
         </button>
-      </nav>
-      <div class="mobile-menu" data-menu>
-        <ul class="mobile-menu__nav">
-          <li class="mobile-menu__item">
-            <a href="" class="mobile-menu__nav-link">Студія</a>
+        <div class="menu-container" id="menu-container" data-menu>
+          <nav class="header-nav">
+            <ul class="header-links list">
+              <li class="header-links__item link">
+                <a href="./index.html" class="header-links__link link current"
+                  >Студія</a
+                >
+              </li>
+              <li class="header-links__item link">
+                <a href="./portfolio.html" class="header-links__link link"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="header-links__item">
+                <a href="" class="header-links__link link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header-contacts list">
+            <li class="header-contacts__item contacts-position">
+              <a
+                href="mailto:info@devstudio.com"
+                class="header-contacts__mail link"
+              >
+                <svg class="header-contacts__icon" width="16" height="12">
+                  <use href="./images/sprite.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="header-contacts__item contacts-position">
+              <a href="tel:+380961111111" class="header-contacts__tel link">
+                <svg class="header-contacts__icon" width="10" height="16">
+                  <use href="./images/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mob-menu is-hidden">
+        <button class="menu-close-btn" type="button">
+          <svg class="mobile-menu__icon" width="40" height="40">
+            <use
+              class="mobile-menu__icon--close"
+              href="./images/sprite.svg#icon-close"
+            ></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu-nav list">
+          <li class="mobile-menu-nav__item">
+            <a class="mobile-menu-nav__link link current" href="./index.html"
+              >Студія</a
+            >
           </li>
-          <li class="mobile-menu__item">
-            <a href="" class="mobile-menu__nav-link">Портфоліо</a>
+          <li class="mobile-menu-nav__item">
+            <a class="mobile-menu-nav__link link" href="./portfolio.html">
+              Портфоліо
+            </a>
           </li>
-          <li class="mobile-menu__item">
-            <a href="" class="mobile-menu__nav-link">Контакти</a>
+          <li class="mobile-menu-nav__item">
+            <a class="mobile-menu-nav__link link" href="#contacts">Контакти</a>
           </li>
         </ul>
-        <ul class="mobile-menu__contacts">
-          <li class="mobile-menu__item">
-            <a href="tel:++380961111111" class="mobile-menu__tel-link">+38 096 111 11 11</a>
+        <ul class="mobile-menu-contacts list">
+          <li class="mobile-menu-contacts__item">
+            <a class="mobile-menu-contacts__link link" href="tel:+380961111111">
+              +38 096 111 11 11
+            </a>
           </li>
-          <li class="mobile-menu__item">
-            <a href="mailto:info@devstudio.com" class="mobile-menu__mail-link">info@devstudio.com</a>
+          <li class="mobile-menu-contacts__item">
+            <a
+              class="mobile-menu-contacts__link link"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com
+            </a>
           </li>
         </ul>
-        <ul class="mobile-menu__socials">
-          <li class="mobile-menu__item">
-            <a href="" class="mobile-menu__link">Instagram</a>
+        <ul class="mobile-menu-soc list">
+          <li class="mobile-menu-soc__name">
+            <a class="mobile-menu-soc__link link" href="">Instagram</a>
           </li>
-          <li class="mobile-menu__item">
-            <a href="" class="mobile-menu__link">Twitter</a>
+          <li class="mobile-menu-soc__name">
+            <a class="mobile-menu-soc__link link" href="">Twitter</a>
           </li>
-          <li class="mobile-menu__item">
-            <a href="" class="mobile-menu__link">Facebook</a>
+          <li class="mobile-menu-soc__name">
+            <a class="mobile-menu-soc__link link" href="">Facebook</a>
           </li>
-          <li class="mobile-menu__item">
-            <a href="" class="mobile-menu__link">Linkedin</a
-              ></li>
+          <li class="mobile-menu-soc__name">
+            <a class="mobile-menu-soc__link link" href="">LinkedIn</a>
+          </li>
         </ul>
-      </div> 
-          <ul class="contact-list">
-
-         <li class="contact-list__item">
-          <a  href="mailto:info@devstudio.com" class="contact-list__link"> info@devstudio.com
-
-            <svg class="contact-list__icon" width="16" height="12">
-              <use href="./images/sprite.svg#icon-mail"></use>
-            </svg>
-
-          </a>
-        </li> -->
-
-        <!--номер телефону-->
-
-        <!-- <li class="contact-list__item">
-          <a  href="tel:+380961111111" class="contact-list__link">+38 096 111 11 11
-
-            <svg class="contact-list__icon" width="10" height="16">
-              <use href="./images/sprite.svg#icon-smartphone"></use>
-            </svg>
-
-          </a>
-        </li>
-      </ul>
       </div>
     </header>
-  -->
+
     <main>
       <section class="section hero">
         <div class="hero__container">
@@ -109,7 +140,7 @@
              <use href="./images/sprite.svg#Close-back"></use>
            </svg>
          </button>
-         <!--
+         
          <form class="modal-form" name="modal-form" autocomplete="off" novalidate action="./js/method.js" method="post">
            <h3 class="modal-form__title">
              <b> Залиште свої особисті дані, ми вам перетелефонуємо</b>
@@ -168,8 +199,8 @@
         </div>
       </div>
     </div>
-      </section> -->
-<!--
+      </section> 
+
       <section class="section advantages">
         <div class="container advantages__container">
         <ul class="advantages__list">
@@ -266,18 +297,22 @@
         </ul>
       </div>
       </section>
-    -->
-<!--
+    
+
       <section class="section team">
         <div class="container">
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__list">
           <li class="team__item">
             <img
-              src="./images/Ihor D.jpg"
+            class="team__img"
+            srcset="./images/Team/Mobile/igor-s.jpg 1px
+            ./images/Team/Mobile/igor-s@2x.jpg 2x"
+              src="./images/Team/Mobile/igor-s.jpg"
               alt="Ігор Дем'яненко"
-              width="270"
-              height="260"
+              width="450"
+              height="460"
+              loading="lazy"
             />
             <div class="description"> <h3 class="description__name">Ігор Дем'яненко</h3>
             <p class="description__position">Product Designer</p>
@@ -327,11 +362,15 @@
          </div>
           </li>
           <li class="team__item">
-            <img
-              src="./images/Olga.jpg"
+            <img class="team__img"
+            srcset="./images/Team/Mobile/olga-s.jpg 1px
+            ./images/Team/Mobile/olga-s@2x.jpg 2x"
+              src="./images/Team/Mobile/olga-s.jpg"
               alt="Ольга Репіна"
-              width="270"
-              height="260"
+              width="450"
+              height="460"
+              loading="lazy"
+
             />
             <div class="description">
               <h3 class="description__name">Ольга Репіна</h3>
@@ -380,11 +419,14 @@
             </div> 
           </li>
           <li class="team__item" >
-            <img
-              src="./images/Mykola.jpg"
+            <img class="team__img"
+            srcset="./images/Team/Mobile/mykola-s.jpg 1px
+            ./images/Team/Mobile/mykola-s@2x.jpg 2x"
+              src="./images/w/mykola-450.jpg"
               alt="Микола Тарасов"
-              width="270"
-              height="260"
+              width="450"
+              height="460"
+              loading="lazy"
             />
             <div class="description"> 
               <h3 class="description__name">Микола Тарасов</h3>
@@ -435,11 +477,14 @@
                       </div> 
           </li>
           <li class="team__item">
-            <img
-              src="./images/Mykhailo.jpg"
+            <img class="team__img"
+            srcset="./images/Team/Mobile/misha-s.jpg 1px
+            ./images/Team/Mobile/misha-s@2x.jpg 2x"
+              src="./images/Team/Mobile/misha-s.jpg"
               alt="Михайло Єрмаков"
-              width="270"
-              height="260"
+              width="450"
+              height="460"
+              loading="lazy"
             />
             <div class="description"> 
               <h3 class="description__name" >Михайло Єрмаков</h3>
@@ -494,9 +539,9 @@
         </ul>
       </div>
       </section>
-
+  
     
-      <!--
+      
       <section class="section clients">
 <div class="container">
   <h2 class="clients__title"> Постійні клієнти </h2>

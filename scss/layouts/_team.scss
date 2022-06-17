@@ -2,7 +2,8 @@
   padding-top: 66px;
   padding-bottom: 66px;
 
-  background-color: #FFFFFF;
+  background-color: #F5F4FA;
+
 
   @media screen and(min-width:768px) {
     padding-top: 60px;
@@ -12,21 +13,15 @@
 }
   .team__title {
     
-    @include fonts (700, 36px, 42px, 0.03em, center);
-
-    color: var(--color-main-text);
-
     margin-bottom: 30px;
-
-    text-transform: none;
-    align-items: center;
+    @include fonts (700, 28px, 33px, 0.03em, center);
     text-align: center;
-    margin-top: 0;
 
-    @include mq(desktop) {
-    margin-bottom: 50px;
+    @media screen and(min-width:1200px) {
+      margin-bottom: 50px;
+      @include fonts (700, 36px, 42px, 0.03em, null);
     }
-
+  
   }
 
    .team__list {
@@ -35,35 +30,84 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
-    @media screen and(min-width:768px) {
+    
+   }
+   /** @media screen and(min-width:768px) {
       margin-right: calc(-1 * 30px);
       margin-bottom: calc(-1 * 30px);
-    }
-   }
+    }**/
+
+  
 
   .team__item {
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
-  
-@media screen and (min-width:320px) {
-  margin-left: 15px;
-  margin-bottom: 15px;
-  flex-basis: calc(100% / 2 - 15px);
-}
 
-@media screen and (min-width:480px) {
-  margin-left: 30px;
+@include mq(mobile-only) {
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  }
+@include mq(tablet-only) {
+    width: calc((100% - 1 * 30px) / 2);
+}
+@include mq(tablet-only) {
+  &:not(:nth-child(2n)) {
+    margin-right: 30px;
+}
+&:not(:nth-last-child(-n+2)) {
   margin-bottom: 30px;
-  flex-basis: calc(100% / 2 - 30px);
+}
+}
+@include mq(desktop) {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
 }
 
 @media screen and (min-width:768px) {
-  flex-basis: calc(100% / 6 - 30px);
-}
-}
   
+  /** &:not(:nth-child(2n)) {
+    margin-right: 15px;
+    &:not(:nth-child(4n)) {
+      margin-right: 15px; **/
+
+ /** flex-basis: calc(100% / 2 - 15px) **/
+
+@media screen and (min-width:480px) {
+  
+  margin-bottom: 30px;
+ /** flex-basis: calc(100% / 2 - 30px) **/
+}
+
+@media screen and (min-width:768px) {
+ /** flex-basis: calc(100% / 6 - 30px) **/
+}
+
+@media screen and(min-width:320px) {
+  margin-bottom: 30px;
+  width: 290px;
+}
+
+@media screen and(min-width:480px) {
+  width: 450px;
+}
+
+@media screen and(min-width:768px) {
+  width: 354px;
+}
+
+@media screen and(min-width:768px) {
+  width: 270px;
+}
+
+@media screen and (min-width:1200px) {
+  :not(:last-child) {
+    margin-right: 30px;
+}
+}
+}
 .description {
   padding: 30px 0px;
   padding-top: 30px;
@@ -91,3 +135,4 @@ border-radius: 0px 0px 4px 4px;
     margin-top: 10px;
     margin-bottom: 16px;
 }
+  }
