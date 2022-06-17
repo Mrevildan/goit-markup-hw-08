@@ -10,13 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+
   </head>
   <body>
 
-    <!--Шапка-->
-    <header class="header">
+    <!--Шапка
+     <header class="header">
       <div class="container header__container">
         <a class="logo" href="./index.html" lang="en" ><span class="logo__accent">Web</span>Studio</a>
       <nav class="navigation">
@@ -25,10 +26,53 @@
           <li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфоліо</a></li>
           <li class="navigation__item"><a href="#address" class="navigation__link">Контакти</a></li>
         </ul>
+        <button type="button" class="menu-button is-open" 
+        data-menu-button
+        aria-expanded="false">
+          <svg  width="40" height="40" aria-label="Кнопка мобільного меню">
+            <use class="icon-close" href="./images/sprite.svg#icon-close"> </use>
+              <use class="icon-menu" href="./images/sprite.svg#icon-menu"> </use>
+          </svg>
+        </button>
       </nav>
-      <ul class="contact-list">
-        <!--електронна пошта-->
-        <li class="contact-list__item">
+      <div class="mobile-menu" data-menu>
+        <ul class="mobile-menu__nav">
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__nav-link">Студія</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__nav-link">Портфоліо</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__nav-link">Контакти</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__contacts">
+          <li class="mobile-menu__item">
+            <a href="tel:++380961111111" class="mobile-menu__tel-link">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="mailto:info@devstudio.com" class="mobile-menu__mail-link">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__socials">
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Instagram</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Twitter</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Facebook</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Linkedin</a
+              ></li>
+        </ul>
+      </div> 
+          <ul class="contact-list">
+
+         <li class="contact-list__item">
           <a  href="mailto:info@devstudio.com" class="contact-list__link"> info@devstudio.com
 
             <svg class="contact-list__icon" width="16" height="12">
@@ -36,9 +80,11 @@
             </svg>
 
           </a>
-        </li>
+        </li> -->
+
         <!--номер телефону-->
-        <li class="contact-list__item">
+
+        <!-- <li class="contact-list__item">
           <a  href="tel:+380961111111" class="contact-list__link">+38 096 111 11 11
 
             <svg class="contact-list__icon" width="10" height="16">
@@ -50,9 +96,9 @@
       </ul>
       </div>
     </header>
-
+  -->
     <main>
-      <section class="hero">
+      <section class="section hero">
         <div class="hero__container">
         <h1 class="hero__title">Ефективні рішення <br /> для вашого бізнесу</h1>
         <button type="button" class="btn button" data-modal-open >Замовити послугу</button>
@@ -63,7 +109,7 @@
              <use href="./images/sprite.svg#Close-back"></use>
            </svg>
          </button>
-         
+         <!--
          <form class="modal-form" name="modal-form" autocomplete="off" novalidate action="./js/method.js" method="post">
            <h3 class="modal-form__title">
              <b> Залиште свої особисті дані, ми вам перетелефонуємо</b>
@@ -122,10 +168,10 @@
         </div>
       </div>
     </div>
-      </section>
-
-      <section class="advantages">
-        <div class="container">
+      </section> -->
+<!--
+      <section class="section advantages">
+        <div class="container advantages__container">
         <ul class="advantages__list">
           <li class="advantages__item">
             <h2 class="advantages__title">Наші переваги</h2>
@@ -187,7 +233,9 @@
         </div>
       </section>
 
-      <section class="work">
+
+      
+      <section class="section work">
         <div class="container">
           <h2 class="work__title">Чим ми займаємось</h2>
         <ul class="work__list">
@@ -198,9 +246,6 @@
               width="370"
               height="294"
             />
-             <!-- <div class="overlay">
-             <p class="overlay-text">  Декстопні додатки </p>
-            </div> -->
           </li>
           <li class="work__item" data-work="Мобільні додатки">
             <img
@@ -209,10 +254,6 @@
               width="370"
               height="294"
             />
-            
-            <!-- <div class="overlay">
-              <p class="overlay-text"> Мобільні додатки </p>
-             </div> -->
           </li>
           <li class="work__item" data-work="Дизайнерські рішення">
             <img
@@ -221,15 +262,13 @@
               width="370"
               height="294"
             />
-            <!-- <div class="overlay">
-              <p class="overlay-text"> Дизайнерські ріщення</p>
-             </div> -->
           </li>
         </ul>
       </div>
       </section>
-
-      <section class="team">
+    -->
+<!--
+      <section class="section team">
         <div class="container">
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__list">
@@ -456,9 +495,9 @@
       </div>
       </section>
 
-
-      
-      <section class="clients">
+    
+      <!--
+      <section class="section clients">
 <div class="container">
   <h2 class="clients__title"> Постійні клієнти </h2>
   <ul class="clients__list">
@@ -602,7 +641,9 @@
   </div>
       </div>
   </footer>
+-->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

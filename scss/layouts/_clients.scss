@@ -1,15 +1,11 @@
 .clients  {
-    justify-content: center;
-    height: 372px;
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 94px;
-    padding-bottom: 94px;
-
+   
+    @include mq(tablet) {
+      display: flex;
+      
     
   }
-
+}
 .clients__title {
 
     @include fonts (700, 36px, 42px, 0.03em, center);
@@ -25,37 +21,75 @@
  
 }
 
-.clients__list {
-  display: flex;
-  justify-content: center;
+/** .clients__list {
 
+  @include mq(mobile) {
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
+
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
 }
+  
+  @include mq(desktop) {
+  display: flex;
+  flex-wrap: nowrap;
+  }
+}
+
+
 
 .clients__item {
 
-  width: 170px;
-  height: 90px;
-  
+  flex-basis: calc(100% / 6 - 30px);
+
+  @include mq(desktop) {
+  &:not(:last-child) {
+    margin-right: 30px;
+}
+  }
+
+  @include mq(tablet-only) {
+    width: calc((100% - 1 * 30px) / 2);
+
+  &:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
 &:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 }
 
+
+@include mq(mobile-only) {
+  margin-left: -30px;
+  margin-bottom: -30px;
+  flex-basis: calc(100% / 2 - 30px);
+}
+}
+**/
 .clients__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
-  height: 90px;
+  width: 226px;
+  height: 92px;
   background-color: #FFFFFF;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
 
   transition: var(--fast-anim);
 
-}
-
-.clients__link {
+  @include mq(desktop) {
+    width: 170px;
+  height: 92px;
+  }
+  
   color: #AFB1B8;
 
   &:hover {
@@ -75,4 +109,40 @@
 
 .clients__icon {
   fill: currentColor;
+}
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: -30px;
+  justify-content: center;
+
+  @media screen and (min-width:320px) {
+    margin-left: -15px;
+  }
+
+  @media screen and (min-width:480px) {
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+}
+.clients__item {
+
+
+  @media screen and (min-width:320px) {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    flex-basis: calc(100% / 2 - 15px);
+  }
+
+  @media screen and (min-width:480px) {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+
+  @media screen and (min-width:768px) {
+    flex-basis: calc(100% / 6 - 30px);
+  }
 }

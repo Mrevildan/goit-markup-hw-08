@@ -1,7 +1,38 @@
 .container {
-    margin-right: auto;
+    margin-right:  auto;
     margin-left: auto;
-    width: 1200px;
+    
     padding-left: 15px;
     padding-right: 15px;
-  }
+
+    
+/** Екран телефону з 480px **/
+    @media screen and (min-width: 480px) {
+      width: 448px;
+    }
+
+    @include mq(mobile) {
+      width: 448px;
+    }
+
+/** Екран таблета (планшет) **/
+
+    @media screen and (min-width: 768px) {
+      width: 738px;
+    }
+
+    @include mq(tablet) {
+      width: 738px;
+    }
+    
+/** Екран декстопа (пк/ноутбук) **/
+
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
+
+    @include mq(desktop) {
+      width: 1200px;
+    }
+    
+}

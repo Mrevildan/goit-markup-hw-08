@@ -8,6 +8,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+
   }
 
   .logo {
@@ -25,6 +27,7 @@
 
   .navigation {
     display: flex;
+  
     align-items: center;
     height: 80px;
     margin-right: 110px;
@@ -125,3 +128,22 @@
     margin-right: 10px;
 }
   
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-menu {
+  display: none;
+}
+
+.menu-button.is-open .icon-menu{
+  display: block;
+}
+
+.menu-button.is-open  .icon-close {
+  display: none;
+}

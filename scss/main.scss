@@ -1,32 +1,38 @@
 // utils
-@import './utils/vars';
-@import './utils/visually-hidden';
-@import './utils/placeholdres';
-@import './utils/mixins';
+@import 'utils/mixins';
+@import 'utils/placeholdres';
+@import 'utils/vars';
+@import 'utils/visually-hidden';
 
 // base 
-@import './base/common';
-@import './base/container';
-@import './base/reset';
-
-// components style 
-@import './components/button';
-@import './components/logo';
-@import './components/social-icon';
-@import './components/button-section'; 
+@import 'base/common';
+@import 'base/container';
+@import 'base/reset';
+@import 'base/section';
 
 // components style of modal 
-@import './components/modal-form/modal-wrapper';
-@import './components/modal-form/modal-form';
-@import './components/modal-form/modal-checkbox';
+@import 'components/modal-form/modal-checkbox';
+@import 'components/modal-form/modal-form';
+@import 'components/modal-form/modal-wrapper';
+
+// components style 
+@import 'components/button-section'; 
+@import 'components/button';
+@import 'components/logo';
+@import 'components/social-icon';
+@import 'components/mobile-menu';
 
 // layouts 
-@import './layouts/header';
-@import './layouts/hero';
-@import './layouts/advantages';
-@import './layouts/work';
-@import './layouts/team';
-@import './layouts/clients';
-@import './layouts/portfolio';
-@import './layouts/footer';
+@import 'layouts/advantages';
+@import 'layouts/clients';
+@import 'layouts/footer';
+@import 'layouts/header';
+@import 'layouts/hero';
+@import 'layouts/portfolio';
+@import 'layouts/team';
+@import 'layouts/work';
+
+
+
+
     
