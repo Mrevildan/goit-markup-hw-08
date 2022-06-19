@@ -1,12 +1,25 @@
 .hero {
-    background-color: var(--secondary-bg-cl);
-    padding: 200px 0;
+    background-color: var(#757575);
+
+    width: 100%;
+  
+    max-width: 360px;
+    padding: 118px 0;
     margin-right: auto;
     margin-left: auto;
-    width: 100%;
+    text-align: center;
 
     background-size: cover;
 
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+      height: 400px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 200px 0;
+      height: 600px;
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
    /* max-width: 1600px; */
  
     background-image: linear-gradient(to right rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -41,12 +54,9 @@
     }
 
 
-    
-
     background-repeat: no-repeat;
     background-position: center;
     max-width: 1600px;
-    height: 600px;
   }
     
     .hero__container {
@@ -58,7 +68,7 @@
   
   .hero__title {
     
-    @include fonts (900, 44px, 1.36, 0.06em, center);
+    @include fonts (900, 26px, 42px, 0.06em, center);
 
     text-transform: uppercase;
     color: #ffffff;

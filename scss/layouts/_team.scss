@@ -27,10 +27,14 @@
    .team__list {
     
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  
    }
    /** @media screen and(min-width:768px) {
       margin-right: calc(-1 * 30px);
@@ -40,73 +44,34 @@
   
 
   .team__item {
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+    border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 
-@include mq(mobile-only) {
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
   &:not(:last-child) {
-    margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
-  }
-@include mq(tablet-only) {
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: calc((100% - 1 * 30px) / 2);
-}
-@include mq(tablet-only) {
-  &:not(:nth-child(2n)) {
-    margin-right: 30px;
-}
-&:not(:nth-last-child(-n+2)) {
-  margin-bottom: 30px;
-}
-}
-@include mq(desktop) {
-  width: calc((100% - 90px) / 4);
-  margin-right: 30px;
-}
 
-@media screen and (min-width:768px) {
-  
-  /** &:not(:nth-child(2n)) {
-    margin-right: 15px;
-    &:not(:nth-child(4n)) {
-      margin-right: 15px; **/
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+  }
 
- /** flex-basis: calc(100% / 2 - 15px) **/
-
-@media screen and (min-width:480px) {
-  
-  margin-bottom: 30px;
- /** flex-basis: calc(100% / 2 - 30px) **/
-}
-
-@media screen and (min-width:768px) {
- /** flex-basis: calc(100% / 6 - 30px) **/
-}
-
-@media screen and(min-width:320px) {
-  margin-bottom: 30px;
-  width: 290px;
-}
-
-@media screen and(min-width:480px) {
-  width: 450px;
-}
-
-@media screen and(min-width:768px) {
-  width: 354px;
-}
-
-@media screen and(min-width:768px) {
-  width: 270px;
-}
-
-@media screen and (min-width:1200px) {
-  :not(:last-child) {
-    margin-right: 30px;
-}
-}
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 .description {
   padding: 30px 0px;
@@ -135,4 +100,4 @@ border-radius: 0px 0px 4px 4px;
     margin-top: 10px;
     margin-bottom: 16px;
 }
-  }
+  

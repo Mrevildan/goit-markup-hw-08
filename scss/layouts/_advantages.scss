@@ -16,7 +16,11 @@
 **/
 }
 }
-  
+
+  .advantages {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
   .advantages__list {
 
     @include mq(tablet) {
