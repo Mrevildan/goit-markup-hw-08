@@ -91,7 +91,7 @@
 
 
 .mobile-contacts__list {
-   position: relative;
+
     display: flex;
     justify-content: space-between;
 
@@ -114,6 +114,11 @@ line-height: 22px;
     }
   }
 
+  .link {
+            transition: var(--fast-anim);
+
+  }
+  
 
 .pseudo {
   &:not(:first-child) {

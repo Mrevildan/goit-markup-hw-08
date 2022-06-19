@@ -28,6 +28,11 @@
   transition-property: background-color var(--fast-anim);
 }
 
+.link {
+  -webkit-transition: var(--fast-anim);
+  transition: var(--fast-anim);
+}
+
 :root {
   --color-main-text: #212121;
   --color-secondary-text: #757575;
@@ -750,7 +755,6 @@ img {
 }
 
 .mobile-contacts__list {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -775,6 +779,11 @@ img {
 
 .mobile-contacts__link:hover, .mobile-contacts__link:focus {
   color: var(--accent);
+}
+
+.link {
+  -webkit-transition: var(--fast-anim);
+  transition: var(--fast-anim);
 }
 
 @media screen and (min-width: 480px) {
@@ -1650,6 +1659,8 @@ img {
   height: 40px;
   padding: 0;
   margin-left: auto;
+  -webkit-transition: var(--fast-anim);
+  transition: var(--fast-anim);
 }
 
 .menu-open-btn:hover,
@@ -1677,6 +1688,8 @@ img {
   z-index: 5;
   top: 10px;
   right: 15px;
+  -webkit-transition: var(--fast-anim);
+  transition: var(--fast-anim);
 }
 
 .menu-close-btn:hover,
