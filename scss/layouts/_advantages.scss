@@ -18,8 +18,17 @@
 }
 
   .advantages {
+    padding-bottom: 60px;
+    padding-top: 60px;
+    
+    @include mq(tablet) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+  }
+    
+  @include mq(desktop) {
     padding-top: 94px;
-    padding-bottom: 0;
+    padding-bottom: 0px;
   }
   .advantages__list {
 
@@ -29,6 +38,7 @@
   }
     
     @include mq(desktop) {
+
     display: flex;
     flex-wrap: nowrap;
     
@@ -98,5 +108,4 @@
       color: var(--color-secondary-text);
     }
 
-  
-  
+  }

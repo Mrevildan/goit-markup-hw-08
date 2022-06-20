@@ -2,10 +2,14 @@
    
     @include mq(tablet) {
       display: flex;
-      
-    
+  }
+
+  @include mq(desktop) {
+    padding-bottom: 94px;
+    padding-top: 94px;
   }
 }
+
 .clients__title {
 
     @include fonts (700, 28px, 33px, 0.03em, center);
@@ -22,7 +26,8 @@
 
     @include mq(desktop) {
     @include fonts (700, 36px, 42px, 0.03em, center);
-    
+    margin-bottom: 50px;
+
     }
 
 }
